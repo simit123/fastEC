@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportFragment;
-import me.yokeyword.fragmentation_swipeback.SwipeBackFragment;
 
 public abstract class BaseDelegate extends SupportFragment {
 
@@ -33,10 +32,12 @@ public abstract class BaseDelegate extends SupportFragment {
         }
         else if (setLayout() instanceof View){
             rootView = (View) setLayout();
-            onBindView(savedInstanceState,rootView);
+        }else {
+            throw new IllegalStateException("layout is illegal!");
         }
 
         if (rootView != null) {
+            onBindView(savedInstanceState,rootView);
             unbinder = ButterKnife.bind(this,rootView);
         }
 

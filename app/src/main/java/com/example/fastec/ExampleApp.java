@@ -17,7 +17,7 @@ public class ExampleApp extends Application {
     public void onCreate() {
         super.onCreate();
         //初始化采用这种配置方式
-        Latte.init(this).withApiHost("")
+        Latte.init(this).withApiHost("http://news.baidu.com/")
                 .withIcon(new FontAwesomeModule())
                 .withIcon(new FontEcModel()).configure();
     }
