@@ -6,8 +6,10 @@ import android.media.JetPlayer;
 import java.util.Map;
 
 import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
@@ -50,6 +52,11 @@ public interface RestService {
     @POST
     Call<String> upload(@Url String url, @Part MultipartBody.Part file);
 
+    @POST
+    Call<String> postRaw(@Url String url, @Body RequestBody body);
+
+    @PUT
+    Call<String> putRaw(@Url String url, @Body RequestBody body);
 
 
 }

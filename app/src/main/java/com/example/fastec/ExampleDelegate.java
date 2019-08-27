@@ -28,7 +28,7 @@ public class ExampleDelegate extends LatteDelegate {
                 .url("http://news.baidu.com/")
                 .loader(getContext())
                 .onSuccess(response -> {
-                    Toast.makeText(Latte.getApplication(),response,Toast.LENGTH_LONG).show();
+                    Toast.makeText(Latte.getApplicationContext(),response,Toast.LENGTH_LONG).show();
 
                 }).onFailure(() -> {
 
@@ -37,7 +37,7 @@ public class ExampleDelegate extends LatteDelegate {
                 }).onRequest(new IRequest() {
             @Override
             public void onRequestStart() {
-                Toast.makeText(Latte.getApplication(),"请求开始",Toast.LENGTH_LONG).show();
+                Toast.makeText(Latte.getApplicationContext(),"请求开始",Toast.LENGTH_LONG).show();
             }
 
             @Override

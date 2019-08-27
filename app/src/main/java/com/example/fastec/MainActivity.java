@@ -13,7 +13,7 @@ public class MainActivity extends ProxyActivity {
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-////        Toast.makeText(Latte.getApplication(),"传入context了",Toast.LENGTH_LONG).show();
+////        Toast.makeText(Latte.getApplicationContext(),"传入context了",Toast.LENGTH_LONG).show();
 //    }
 
     @Override
