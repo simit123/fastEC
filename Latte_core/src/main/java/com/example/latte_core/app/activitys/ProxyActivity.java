@@ -20,6 +20,7 @@ public abstract class ProxyActivity extends SupportActivity {
 
     public abstract LatteDelegate setRootDelegate();
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

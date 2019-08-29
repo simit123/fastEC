@@ -32,10 +32,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api 'androidx.appcompat:appcompat:1.0.2'
     implementation project(':latte_annotations')
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     api 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -46,19 +46,19 @@ dependencies {
     api 'me.yokeyword:fragmentationx:1.0.1'
     api 'me.yokeyword:fragmentationx-swipeback:1.0.1'
     //butterknife
-    implementation 'com.jakewharton:butterknife:10.1.0'
+    api 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
     //net
-    implementation rootProject.ext.dependencies["gson"]
-    implementation rootProject.ext.dependencies["okhttp"]
-    implementation rootProject.ext.dependencies["logging-interceptor"]
-    implementation rootProject.ext.dependencies["retrofit"]
-    implementation rootProject.ext.dependencies["converter-gson"]
-    implementation rootProject.ext.dependencies["adapter-rxjava2"]
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["okhttp"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava2"]
     api 'com.squareup.retrofit2:converter-scalars:2.4.0'
 
-//    ui
+//    loader
     api 'com.wang.avi:library:2.1.3'
 
 
@@ -67,6 +67,14 @@ dependencies {
     api rootProject.ext.dependencies["rxandroid"]
     api rootProject.ext.dependencies["rxbinding"]
     api rootProject.ext.dependencies["rxpermissions"]
+
+
+    //banner
+    api 'com.bigkoo:convenientbanner:2.1.5'
+    api 'androidx.recyclerview:recyclerview:1.0.0+'
+
+    //Json
+    api 'com.alibaba:fastjson:1.1.68.android'
 
 
 }

@@ -3,17 +3,9 @@ package com.example.latte_core.app.net.rx;
 import android.content.Context;
 
 import com.example.latte_core.app.net.HttpMethod;
-import com.example.latte_core.app.net.RestClientBuilder;
 import com.example.latte_core.app.net.RestCreator;
-import com.example.latte_core.app.net.RestService;
-import com.example.latte_core.app.net.callback.IError;
-import com.example.latte_core.app.net.callback.IFailure;
-import com.example.latte_core.app.net.callback.IRequest;
-import com.example.latte_core.app.net.callback.ISuccess;
-import com.example.latte_core.app.net.callback.RequestCallbacks;
-import com.example.latte_core.app.net.download.DownLoadHandler;
-import com.example.latte_core.app.ui.LatteLoader;
-import com.example.latte_core.app.ui.LoadStyle;
+import com.example.latte_core.app.ui.loader.LatteLoader;
+import com.example.latte_core.app.ui.loader.LoadStyle;
 
 import java.io.File;
 import java.util.WeakHashMap;
@@ -23,9 +15,6 @@ import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.http.Url;
 
 /**
  * 网络请求框架  restful

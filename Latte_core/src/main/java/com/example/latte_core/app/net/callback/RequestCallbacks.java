@@ -2,10 +2,8 @@ package com.example.latte_core.app.net.callback;
 
 import android.os.Handler;
 
-import com.example.latte_core.app.ui.LatteLoader;
-import com.example.latte_core.app.ui.LoadStyle;
-
-import java.util.concurrent.atomic.LongAccumulator;
+import com.example.latte_core.app.ui.loader.LatteLoader;
+import com.example.latte_core.app.ui.loader.LoadStyle;
 
 import retrofit2.Call;
 import retrofit2.Callback;

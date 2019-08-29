@@ -8,8 +8,8 @@ import com.example.latte_core.app.net.callback.IRequest;
 import com.example.latte_core.app.net.callback.ISuccess;
 import com.example.latte_core.app.net.callback.RequestCallbacks;
 import com.example.latte_core.app.net.download.DownLoadHandler;
-import com.example.latte_core.app.ui.LatteLoader;
-import com.example.latte_core.app.ui.LoadStyle;
+import com.example.latte_core.app.ui.loader.LatteLoader;
+import com.example.latte_core.app.ui.loader.LoadStyle;
 
 import java.io.File;
 import java.util.WeakHashMap;

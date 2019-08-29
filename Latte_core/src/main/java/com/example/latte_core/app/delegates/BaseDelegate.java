@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.latte_core.app.activitys.ProxyActivity;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportFragment;
@@ -43,6 +45,10 @@ public abstract class BaseDelegate extends SupportFragment {
 
 
         return rootView;
+    }
+
+    public final ProxyActivity getProxyActivity(){
+        return (ProxyActivity) _mActivity;
     }
 
     @Override

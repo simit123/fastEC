@@ -1,4 +1,4 @@
-package com.example.latte_core.app.ui;
+package com.example.latte_core.app.ui.loader;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -11,10 +11,7 @@ import com.example.latte_core.R;
 import com.example.latte_core.app.utils.DimenUtil;
 import com.wang.avi.AVLoadingIndicatorView;
 
-import java.io.DataInput;
 import java.util.ArrayList;
-
-import retrofit2.http.PUT;
 
 public class LatteLoader {
 

@@ -4,7 +4,7 @@ package com.example.latte_core.app.net.rx;
 import android.content.Context;
 
 import com.example.latte_core.app.net.RestCreator;
-import com.example.latte_core.app.ui.LoadStyle;
+import com.example.latte_core.app.ui.loader.LoadStyle;
 
 import java.io.File;
 import java.util.WeakHashMap;
