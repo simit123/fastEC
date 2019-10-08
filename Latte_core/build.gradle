@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 
 
+
 android {
     compileSdkVersion 28
 
@@ -75,6 +76,10 @@ dependencies {
 
     //Json
     api 'com.alibaba:fastjson:1.1.68.android'
+
+    api'com.android.support:design:28.0.0'
+
+//    api 'org.greenrobot:greendao:3.2.2' // add library
 
 
 }

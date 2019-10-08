@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+//apply plugin: 'org.greenrobot.greendao'
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -32,4 +32,6 @@ dependencies {
     implementation project(':latte_ec')
     annotationProcessor project(':latte_compiler')//注解解析器
     implementation project(path: ':Latte_core')
+    compile project(path: ':latte_annotations')
+//    implementation 'org.greenrobot:greendao:3.2.2'
 }
